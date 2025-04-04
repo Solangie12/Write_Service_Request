@@ -8,7 +8,7 @@ document.getElementById('serviceRequestForm').addEventListener('submit', functio
     // Construir el objeto con los datos de la solicitud de servicio
     const serviceRequestData = { name, description };
   
-    // Enviar la solicitud al backend
+    // Enviar la solicitud al backend (sin trailing slash)
     fetch('https://hl7-fhir-ehr-solangie-9665.onrender.com/service-request', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -22,12 +22,13 @@ document.getElementById('serviceRequestForm').addEventListener('submit', functio
     })
     .then(data => {
       console.log('Success:', data);
-      document.getElementById('result').textContent = 'Service Request creado exitosamente! ID: ' + data._id;
+      alert('Service Request creado exitosamente! ID: ' + data._id);
     })
     .catch(error => {
       console.error('Error:', error);
-      document.getElementById('result').textContent = 'Hubo un error en la solicitud: ' + error.message;
+      alert('Hubo un error en la solicitud: ' + error.message);
     });
   });
+  
   
 
