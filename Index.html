@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de serviceRequest HL7 FHIR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de ServiceRequest HL7 FHIR</title>
 </head>
 <body>
-    <h1>Formulario de Solicitud de Servicio</h1>
-    <form id="serviceRequestForm">
-        <label for="name">Nombre del Solicitante:</label>
-        <input type="text" id="name" name="name" required><br><br>
+  <h1>Formulario de Solicitud de Servicio</h1>
+  <form id="serviceRequestForm">
+    <label for="name">Nombre del Solicitante:</label>
+    <input type="text" id="name" name="name" required><br><br>
 
-        <label for="description">Descripción de la Solicitud:</label>
-        <textarea id="description" name="description" required></textarea><br><br>
+    <label for="description">Descripción de la Solicitud:</label>
+    <textarea id="description" name="description" required></textarea><br><br>
 
-        <!-- Puedes agregar más campos de ser necesario -->
-        <button type="submit">Enviar Solicitud</button>
-    </form>
+    <button type="submit">Enviar Solicitud</button>
+  </form>
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
