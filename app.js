@@ -26,6 +26,6 @@ document.getElementById('serviceRequestForm').addEventListener('submit', async f
     })
     .catch((error) => {
         console.error('Error:', error);
-        alert('Hubo un error al crear el paciente.');
+        alert('Hubo un error en la solicitud.');
     });
 });
