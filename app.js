@@ -7,6 +7,7 @@ document.getElementById('serviceRequestForm').addEventListener('submit', functio
   
     // Construir el objeto con los datos de la solicitud de servicio
     const serviceRequestData = { name, description };
+    console.log(serviceRequestData)
   
     // Enviar la solicitud al backend (sin trailing slash)
     fetch('https://hl7-fhir-ehr-solangie-9665.onrender.com/service-request/', {
