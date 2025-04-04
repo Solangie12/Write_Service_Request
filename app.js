@@ -17,7 +17,8 @@ document.getElementById('serviceRequestForm').addEventListener('submit', async f
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(patient)
+        body: JSON.stringify(serviceRequestData)
+
     })
     .then(response => response.json())
     .then(data => {
