@@ -12,7 +12,7 @@ document.getElementById('serviceRequestForm').addEventListener('submit', async f
     };
 
     // Enviar los datos usando Fetch API
-    fetch('https://write-service-request.onrender.com/service-request', { 
+    fetch('https://hl7-fhir-ehr-solangie-9665.onrender.com/service-request', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(serviceRequestData)
