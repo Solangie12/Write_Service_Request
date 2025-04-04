@@ -22,7 +22,7 @@ document.getElementById('serviceRequestForm').addEventListener('submit', async f
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        alert('Paciente creado exitosamente!');
+        alert('Service Request creado exitosamente!');
     })
     .catch((error) => {
         console.error('Error:', error);
